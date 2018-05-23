@@ -78,16 +78,15 @@ var newItem={name:"Watch", price: 64, quantity: 1}
     addItem(newItem);
 
 //5b
-function sortCart(keyName){
-  
-}
+console.log(cart.sort());
+
 
 //5c
 
 function findByName(givenName){
   for (var i = 0; i < cart.length; i++) {
-    if(cart.name[i] == givenName){
-      console.log(cart)
+    if(cart[i].name == givenName){
+      console.log("Name: "+cart[i].name + "Price: " + cart[i].price + "Quantity: "+cart[i].quantity);
     }
   }
 }
