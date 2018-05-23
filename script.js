@@ -77,3 +77,29 @@ var cart = [
 var newItem={name:"Watch", price: 64, quantity: 1}
     addItem(newItem);
 
+//5b
+function sortCart(keyName){
+  
+}
+
+//5c
+
+function findByName(givenName){
+  for (var i = 0; i < cart.length; i++) {
+    if(cart.name[i] == givenName){
+      console.log(cart)
+    }
+  }
+}
+
+//5d
+
+function totalBill(){
+  var totalAmount=0;
+  for( var i =0; i < cart.length; i++){
+    totalAmount = totalAmount + cart[i].quantity*cart[i].price;
+
+  }
+  return totalAmount;
+  }
+console.log(totalBill());
